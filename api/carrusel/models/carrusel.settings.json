@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "carrousels",
+  "kind": "singleType",
+  "collectionName": "carrusels",
   "info": {
-    "name": "Carrusel",
-    "description": ""
+    "name": "Carrusel"
   },
   "options": {
     "increments": true,
@@ -13,18 +12,17 @@
   "pluginOptions": {},
   "attributes": {
     "titulo": {
-      "type": "text",
-      "required": true
+      "type": "string"
     },
     "descripcion": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "imagenes": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
