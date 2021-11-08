@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "selloSeguridad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true,
+      "default": "© copyright 2021 | Mutual-UCN"
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true,
+      "default": "Nacimos para dar seguridad, salud y protección a los trabajadores, trascendemos aportando al progreso de Chile"
+    },
+    "links": {
+      "type": "json"
+    }
+  }
+}
