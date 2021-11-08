@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "footers",
   "info": {
-    "name": "footer"
+    "name": "footer",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,7 +21,8 @@
     },
     "descripcion": {
       "type": "text",
-      "required": true
+      "required": true,
+      "default": "Nacimos para dar seguridad, salud y protección a los trabajadores, trascendemos aportando al progreso de Chile"
     },
     "links": {
       "type": "json"
