@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "selloSeguridad": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true,
+      "default": "copyright &copy; 2021 | Mutual-UCN"
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "links": {
+      "type": "json"
+    }
+  }
+}
