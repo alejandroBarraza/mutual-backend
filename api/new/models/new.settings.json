@@ -30,10 +30,6 @@
     "cuerpo": {
       "type": "richtext"
     },
-    "descripcion": {
-      "type": "richtext",
-      "required": true
-    },
     "downloads": {
       "via": "news",
       "collection": "download",
@@ -44,6 +40,11 @@
       "max": 300,
       "required": true,
       "min": 1
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true,
+      "maxLength": 40
     }
   }
 }
