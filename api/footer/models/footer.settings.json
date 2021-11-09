@@ -24,8 +24,24 @@
       "required": true,
       "default": "Nacimos para dar seguridad, salud y protección a los trabajadores, trascendemos aportando al progreso de Chile"
     },
-    "links": {
-      "type": "json"
+    "instagram": {
+      "type": "string",
+      "required": false,
+      "default": "https://www.instagram.com"
+    },
+    "facebook": {
+      "type": "string",
+      "required": false,
+      "default": "https://www.facebook.com"
+    },
+    "twitter": {
+      "type": "string",
+      "required": false,
+      "default": "https://www.twitter.com"
+    },
+    "youtube": {
+      "type": "string",
+      "default": "https://www.youtube.com"
     }
   }
 }

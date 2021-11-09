@@ -20,19 +20,13 @@
     "imagen": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
     },
     "cuerpo": {
       "type": "richtext"
-    },
-    "descripcion": {
-      "type": "richtext",
-      "required": true
     },
     "downloads": {
       "via": "news",
@@ -45,17 +39,10 @@
       "required": true,
       "min": 1
     },
-    "imagenPresentacion": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "descripcion": {
+      "type": "text",
+      "required": true,
+      "maxLength": 40
     }
   }
 }
