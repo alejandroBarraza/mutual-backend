@@ -44,6 +44,18 @@
       "max": 300,
       "required": true,
       "min": 1
+    },
+    "imagenPresentacion": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
