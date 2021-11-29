@@ -18,7 +18,7 @@ module.exports = {
       ctx.request.body;
 
     const output = `
-    <p>Tienes un nuevo mensaje desde el sitio web "Aun te Espero".</p>
+    <h1>Tienes un nuevo mensaje desde el sitio web <bold>Aun te Espero.</bold></h1>
     <h3>Detalles del contacto</h3>
     <ul style="list-style-type:none">
       <li><bold>Nombre:</bold> ${nombre} ${apellido}</li>
@@ -32,7 +32,7 @@ module.exports = {
     try {
       await strapi.plugins["email"].services.email.send({
         to: "alejandro.barraza1997@gmail.com",
-        from: "alejandro.barraza1997@gmail.com",
+        from: "mutualantofagasta@gmail.com",
         subject: "Aun te espero",
         html: output,
       });
