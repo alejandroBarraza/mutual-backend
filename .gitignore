@@ -111,3 +111,6 @@ testApp
 coverage
 
 # End of https://www.toptal.com/developers/gitignore/api/react,strapi
+
+#production mode
+package-lock.json
