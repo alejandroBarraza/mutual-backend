@@ -21,4 +21,13 @@ module.exports = ({ env }) => ({
       defaultReplyTo: env("SENDGRID_DEFAULT_REPLY_TO"),
     },
   },
+  graphql: {
+    endpoint: "/graphql",
+    shadowCRUD: true,
+    playgroundAlways: true,
+    depthLimit: 100,
+    apolloServer: {
+      tracing: false,
+    },
+  },
 });

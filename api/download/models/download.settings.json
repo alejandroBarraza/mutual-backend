@@ -17,9 +17,6 @@
       "required": true,
       "unique": false
     },
-    "descripcion": {
-      "type": "richtext"
-    },
     "imagen": {
       "model": "file",
       "via": "related",
@@ -49,6 +46,10 @@
     },
     "fijar": {
       "type": "boolean"
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
     }
   }
 }
