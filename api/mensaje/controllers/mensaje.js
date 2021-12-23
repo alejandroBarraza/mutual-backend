@@ -30,7 +30,7 @@ module.exports = {
     `;
     try {
       await strapi.plugins["email"].services.email.send({
-        to: "alejandro.barraza1997@gmail.com",
+        to: "ateantofagasta@gmail.com",
         from: "mutualantofagasta@gmail.com",
         subject: "Aun te espero",
         html: output,
